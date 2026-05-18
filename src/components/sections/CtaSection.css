@@ -1,0 +1,45 @@
+.cta-section {
+  padding: var(--spacing-3xl) 0;
+  margin-bottom: var(--spacing-xl);
+}
+
+.cta-box {
+  position: relative;
+  text-align: center;
+  padding: var(--spacing-3xl) var(--spacing-xl);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border-color: var(--accent-glow);
+}
+
+.cta-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+  position: relative;
+  z-index: var(--z-above);
+}
+
+.cta-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto var(--spacing-2xl);
+  line-height: 1.6;
+  position: relative;
+  z-index: var(--z-above);
+}
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  position: relative;
+  z-index: var(--z-above);
+}
+
+@media (max-width: 640px) {
+  .cta-actions {
+    flex-direction: column;
+  }
+}

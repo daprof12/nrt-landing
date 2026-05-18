@@ -1,0 +1,60 @@
+.how-it-works {
+  padding: var(--spacing-3xl) 0;
+}
+
+.steps-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-xl);
+}
+
+.step-card {
+  flex: 1;
+  padding: var(--spacing-2xl) var(--spacing-xl);
+  text-align: center;
+  border-radius: var(--radius-xl);
+  position: relative;
+}
+
+.step-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-glass);
+  margin-bottom: var(--spacing-xl);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5) inset;
+}
+
+.step-title {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-primary);
+}
+
+.step-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.step-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .steps-container {
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+  }
+  
+  .step-arrow {
+    transform: rotate(90deg);
+  }
+}
