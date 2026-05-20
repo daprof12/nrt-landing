@@ -53,10 +53,10 @@ export function Footer() {
         <div className="footer-links">
           <div className="link-group">
             <h4 className="link-title">Product</h4>
+            <Link to="/about" onClick={scrollToTop}>About Us</Link>
             <Link to="/#features">Features</Link>
             <Link to="/#integration">Integration</Link>
             <Link to="/whitepaper" onClick={scrollToTop}>White Paper</Link>
-            <a href="https://netreward.online/login">Login</a>
           </div>
           <div className="link-group">
             <h4 className="link-title">Resources</h4>

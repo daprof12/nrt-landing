@@ -52,7 +52,7 @@ export function Header() {
         </Link>
 
         <nav className={`desktop-nav ${mobileMenuOpen ? 'mobile-open' : ''}`}>
-          <button onClick={() => scrollToSection('about')} className="nav-link">About Us</button>
+          <Link to="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
           <button onClick={() => scrollToSection('docs')} className="nav-link">Documentation</button>
           <Link to="/whitepaper" className="nav-link" onClick={() => setMobileMenuOpen(false)}>White Paper</Link>
           <Link to="/contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
