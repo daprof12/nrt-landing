@@ -66,8 +66,8 @@ export function Footer() {
           </div>
           <div className="link-group">
             <h4 className="link-title">Legal</h4>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+            <Link to="/privacy" onClick={scrollToTop}>Privacy Policy</Link>
+            <Link to="/terms" onClick={scrollToTop}>Terms of Service</Link>
           </div>
         </div>
       </div>
