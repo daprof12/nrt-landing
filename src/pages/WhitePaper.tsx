@@ -15,11 +15,13 @@ export function WhitePaper() {
           <p className="page-subtitle max-w-2xl mx-auto">
             A comprehensive overview of the NetReward token economy, technical architecture, and the decentralized incentive model powering global internet services.
           </p>
-          <div className="mt-8 flex justify-center gap-4">
-            <Button variant="primary" size="lg" icon={<Download size={18} />}>
-              Download PDF Version
-            </Button>
-            <Button variant="outline" size="lg">
+          <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4 w-full px-4 sm:px-0">
+            <a href="/NetReward_Whitepaper.pdf" download="NetReward_Whitepaper.pdf" target="_blank" rel="noopener noreferrer" className="flex w-full sm:w-56">
+              <Button variant="primary" size="lg" icon={<Download size={18} />} className="w-full">
+                Download PDF Version
+              </Button>
+            </a>
+            <Button variant="outline" size="lg" className="w-full sm:w-56">
               Read Online
             </Button>
           </div>
